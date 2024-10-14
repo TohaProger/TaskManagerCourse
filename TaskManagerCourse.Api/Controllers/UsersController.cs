@@ -24,7 +24,7 @@ namespace TaskManagerCourse.Api.Controllers
             if(userModel != null)
             {
                 User newUser = new User(userModel.FirstName, userModel.LastName, userModel.Email,
-                    userModel.Password, userModel.Phone, userModel.Status);
+                    userModel.Password, userModel.Phone, userModel.Status, userModel.Photo);
                 _db.Users.Add(newUser);
                 _db.SaveChanges();
                 return Ok();

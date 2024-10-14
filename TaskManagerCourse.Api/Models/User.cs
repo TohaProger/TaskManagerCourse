@@ -30,9 +30,20 @@ namespace TaskManagerCourse.Api.Models
             Email = email;
             Password = password;
             Phone = phone;
-            Photo = photo;
             Status = status;
+            Photo = photo;
             RegistrationDate = DateTime.Now;
+        }
+
+        public User(UserModel model)
+        {
+            FirstName = model.FirstName;
+            LastName = model.LastName;
+            Email = model.Email;
+            Password = model.Password;
+            Phone = model.Phone;
+            Status = model.Status;
+            Photo = model.Photo;
         }
 
         public UserModel ToDto() {

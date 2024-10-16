@@ -67,7 +67,6 @@ namespace TaskManagerCourse.Api.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("Photo")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
                     b.Property<int>("ProjectId")
@@ -105,7 +104,6 @@ namespace TaskManagerCourse.Api.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("Photo")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
                     b.Property<int>("Status")
@@ -176,7 +174,6 @@ namespace TaskManagerCourse.Api.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("Photo")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
                     b.Property<DateTime>("StartDate")
@@ -220,6 +217,9 @@ namespace TaskManagerCourse.Api.Migrations
 
                     b.Property<string>("Phone")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("Photo")
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<DateTime>("RegistrationDate")
                         .HasColumnType("datetime2");

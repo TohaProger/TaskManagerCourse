@@ -2,7 +2,7 @@
 
 namespace TaskManagerCourse.Api.Models
 {
-    public class Task:CommonObject
+    public class Task : CommonObject
     {
         public int Id { get; set; }
         public DateTime StartDate { get; set; }

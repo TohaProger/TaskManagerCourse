@@ -12,8 +12,8 @@ using TaskManagerCourse.Api.Data;
 namespace TaskManagerCourse.Api.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20240930120450_initial")]
-    partial class initial
+    [Migration("20241014195307_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -70,7 +70,6 @@ namespace TaskManagerCourse.Api.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("Photo")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
                     b.Property<int>("ProjectId")
@@ -108,7 +107,6 @@ namespace TaskManagerCourse.Api.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("Photo")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
                     b.Property<int>("Status")
@@ -179,7 +177,6 @@ namespace TaskManagerCourse.Api.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("Photo")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
                     b.Property<DateTime>("StartDate")
@@ -225,7 +222,6 @@ namespace TaskManagerCourse.Api.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("Photo")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
                     b.Property<DateTime>("RegistrationDate")
